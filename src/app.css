@@ -5,5 +5,38 @@ h1,h2,h3,h4,h5,h6,p {
 }
 body,html {
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--standard-font-name);
+  background-color: var(--normal-background-color);
+}
+
+:root {
+  --normal-background-color: #E5F0FD;
+  --primary-background-color: #CBE2FB;
+  --secondary-background-color: #97C4F7;
+  --tertiary-background-color: #4A98F1;
+  --shadow-color: #0A1B2E;
+  --border-color: #021934;
+  
+  --primary-font-color: #031428;
+  --secondary-font-color: #233143;
+  --tertiary-font-color: #041F3E;
+  
+  --standard-font-name: Andale Mono, monospace;
+  --standard-font-size: calc(min(2vw, 16px));
+  --standard-padding: calc(min(5vw, 4px));
+  --standard-border-width: calc(min(2vw, 2px));
+  --header-border-width: calc(min(2vw, 6px));
+  --standard-margin-width: calc(min(5vw, 16px));
+  --border-radius: calc(min(2vw, 8px));
+  --paragraph-font-size: calc(min(100vw, 12px));
+  --paragraph-width-min: calc(min(100vw, 200px));
+  --paragraph-height-min: calc(min(100vw, 200px));
+  
+  --standard-header-margin-width: calc(min(100vw, 32px));
+  --h1-font-size: calc(min(3vw, 42px));
+  --h2-font-size: calc(min(2.8vw, 36px));
+  --h3-font-size: calc(min(2.6vw, 30px));
+  --h4-font-size: calc(min(2.4vw, 27px));
+  --h5-font-size: calc(min(2.2vw, 24px));
+  --h6-font-size: calc(min(2vw, 21px));
 }
